@@ -9,10 +9,10 @@ spec:
   parameters:
     - title: Provide Simple Information
       required:
-        - appliction_name
+        - application_name
         - package_name
       properties:
-        appliction_name:
+        application_name:
           title: Name
           type: string
           description: Unique name of the component
@@ -42,7 +42,7 @@ spec:
       input:
         url: ./app-template
         values:
-          appliction_name: '{{ parameters.appliction_name }}'
+          application_name: '{{ parameters.application_name }}'
           description: '{{ parameters.description }}'
           package_name: '{{ parameters.package_name }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
